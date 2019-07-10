@@ -76,6 +76,8 @@ media.stagefright.enable-scan=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
+vendor.mm.enable.qcom_parser=13631487
 persist.mm.enable.prefetch=true
 vendor.video.disable.ubwc=1
 
@@ -102,6 +104,9 @@ persist.timed.enable=true
 
 # system property for maximum number of HFP client connections
 bt.max.hfpclient.connections=1
+
+#force disable Bluetooth AAC by default
+persist.bt.a2dp.aac_disable=true
 
 # System property for cabl
 ro.qualcomm.cabl=0
@@ -299,3 +304,6 @@ persist.vendor.radio.data_con_rprt=1
 
 # Lct liuxuan add the dom ignore time
 persist.vendor.radio.ignore_dom_time=15
+
+# Extra
+persist.power.useautobrightadj=true
